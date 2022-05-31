@@ -1,4 +1,4 @@
-# clibequilibrium Blog
+# Alex's Blog
 
 Source code of [https://clibequilibrium.github.io/](https://clibequilibrium.github.io/)
 
