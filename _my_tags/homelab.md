@@ -1,0 +1,4 @@
+---
+slug: homelab
+name: Homelab
+---
