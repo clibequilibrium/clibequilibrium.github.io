@@ -1,0 +1,4 @@
+---
+slug: proxmox
+name: Proxmox
+---
