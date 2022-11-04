@@ -76,7 +76,7 @@ public:
 } // namespace eq
 {% endhighlight %}
 
-{% include image.html path="posts/sample_app.png" path-detail="posts/sample_app.png" alt="Sample app" %}
+{% include image.html path="posts/sample_app.png" path-detail="posts/sample_app.png" alt="Sample application" %}
 
 ### What I use
 Currently I am maintaining **C++17** branch of the engine using [entt](https://github.com/skypjack/entt) library. [SDL](https://www.libsdl.org/) for windowing,

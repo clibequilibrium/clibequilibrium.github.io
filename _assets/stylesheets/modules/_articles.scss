@@ -158,7 +158,8 @@
   img,
   blockquote {
     display: block;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   h2,
   h3,
@@ -176,6 +177,12 @@
     margin-top: -4px;
     margin-bottom: 0;
     vertical-align: middle;
+  }
+
+  figcaption
+  {
+    margin-bottom: 20px;
+    font-size: 13px;
   }
 }
 

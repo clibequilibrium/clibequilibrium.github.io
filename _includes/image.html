@@ -2,7 +2,6 @@
   <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" class="zooming"
     data-rjs="{% asset '{{ include.path-detail }}' @path %}"
     data-zooming-width="{{ assets[include.path-detail].dimensions.width }}"
-    data-zooming-height="{{ assets[include.path-detail].dimensions.height }}"
-  />
+    data-zooming-height="{{ assets[include.path-detail].dimensions.height }}"/>
 </a>
-<figcaption class="figure-caption text-center">{{ include.alt }}</figcaption>
+<figcaption style="text-align:center;"><em>{{ include.alt }}</em></figcaption>

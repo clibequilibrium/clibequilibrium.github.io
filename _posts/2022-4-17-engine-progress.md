@@ -23,11 +23,11 @@ I decided to build one for the purpose of hosting a massive scale online multipl
 
 Below you can see my assembling process and final results (easter egg: try to find Jim from The office ☺).
 
-{% include image.html path="posts/assembling.jpg" path-detail="posts/assembling.jpg" alt="Homelab Assembling" %}
+{% include image.html path="posts/assembling.jpg" path-detail="posts/assembling.jpg" alt="Homelab assembling" %}
 
-{% include image.html path="posts/homelab.jpg" path-detail="posts/homelab.jpg" alt="Homelab" %}
+{% include image.html path="posts/homelab.jpg" path-detail="posts/homelab.jpg" alt="PC Chassis" %}
 
-{% include image.html path="posts/homelab_2.jfif" path-detail="posts/homelab_2.jfif" alt="Homelab 2" %}
+{% include image.html path="posts/homelab_2.jfif" path-detail="posts/homelab_2.jfif" alt="SSD placement" %}
 
 I am very proud of the final results as I was able to install Proxmox as a Hypervisor and spin up as many VMs I want. Virtualize Linux, Windows and Mac if needed. Let me know if you'd like to know more or build your own lab, I may give you an advice of assembling. Stay tuned for the engine progress ! 
 
@@ -35,7 +35,7 @@ I am very proud of the final results as I was able to install Proxmox as a Hyper
 ### PBR Rendering & Forward Shading
 Equilibrium gets pretty! 
 
-{% include image.html path="posts/easter_egg.png" path-detail="posts/easter_egg.png" alt="PBR Rendering" %}
+{% include image.html path="posts/easter_egg.png" path-detail="posts/easter_egg.png" alt="Engine preview" %}
 
 Above you see a screenshot from my Engine with implemented Physical Based Rendering and Forward Shading. I followed [this repository](https://github.com/pezcode/Cluster) as a reference for PBR rendering & shading techniques as I am quiet new to shader programming and graphics in general. It has been quite a journey but I managed to port a big chunk of work to C considering a lot of resources are in C++ for bgfx. I used [Assimp](https://github.com/assimp/assimp) for glTF format import but quickly realized that it is quite slow in terms of importing for real-time applications so the future goal would be to use Assimp only for parsing but then extend bgfx's **geometryc** tool to support texture properties. 
 
