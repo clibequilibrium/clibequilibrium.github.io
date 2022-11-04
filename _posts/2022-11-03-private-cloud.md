@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Proxmox, Terraform, Ansible & Kubernetes"
-description: "See how I plan to have private cloud via Proxmox, Terraform, Ansible and Kubernetes clustur on my Homelab machine!"
+description: "See how I plan to have private cloud via Proxmox, Terraform, Ansible and Kubernetes cluster on my Homelab machine!"
 thumb_image: "posts/grafana.png"
 tags: [homelab, proxmox, terraform, ansible, kubernetes]
 ---
@@ -23,7 +23,7 @@ I use Proxmox as a Hypervisor and provision it via Terraform IAC (Infrastructure
 
 ### Terraform & Ansible
 
-With Terraform & Ansible I am able to automate my provisioning and deployment. By provisioning I mean everything from A to Z , from setting up VM resources, OS installation with cloud init, and Kubernetes installation with joining to an existing Kubernetes cluster.
+With Terraform & Ansible I am able to automate my provisioning and deployment. By provisioning I mean everything from A to Z , from setting up VM resources, OS installation with *cloudinit*, and Kubernetes installation with joining to an existing Kubernetes cluster.
 
 Terraform allows me to locally provision my VMs but also provision Amazon or Google VMs if I decide to go to a public cloud. Ansible playbook is another useful automation tool that allows me to simply connect to my VMs via SSH and deploy Kubernetes on them. I strongly recommend check out [Techno Tim](https://github.com/techno-tim/k3s-ansible) repository and [this article](https://medium.com/@ssnetanel/build-a-kubernetes-cluster-using-k3s-on-proxmox-via-ansible-and-terraform-c97c7974d4a5)
 
