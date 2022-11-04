@@ -15,13 +15,13 @@ It focuses mainly on modularity and the ability to reload your scripts & shaders
 
 ## What's next? 
 
-Currently I am making a private cloud at home with Proxmox, Terraform, Ansible and Kubernetes! It is currently deployed on a single physical machine with 32 cores, 128GB of RAM and 4TB of RAID 10 storage. 
+Currently I am making a private cloud at home with Proxmox, Terraform, Ansible and Kubernetes! It is currently deployed on a single physical machine with 64 threads, 128GB of RAM and 4TB of RAID 10 storage. 
+
+{% include image.html path="posts/grafana.png" path-detail="posts/grafana.png" alt="Grafana" %}
 
 I use Proxmox as a Hypervisor and provision it via Terraform IAC (Infrastructure as Code) and Ansible that allows me to deploy Kubernetes in HA (high availability mode) on all the Virtual Machines.
 
 ### Terraform & Ansible
-
-{% include image.html path="posts/grafana.png" path-detail="posts/grafana.png" alt="Grafana" %}
 
 With Terraform & Ansible I am able to automate my provisioning and deployment. By provisioning I mean everything from A to Z , from setting up VM resources, OS installation with cloud init, and Kubernetes installation with joining to an existing Kubernetes cluster.
 
@@ -57,5 +57,7 @@ Currently I have deployed [Minio](https://min.io/) (S3 compatible storage) for m
 {% include image.html path="posts/minio.png" path-detail="posts/minio.png" alt="Minio" %}
 
 I also host wiki [Outline](https://github.com/outline/outline) as an alternative to Notion where I document all my work and sketch up system designs. Next steps would be to use ArgoCD to setup build system so my project can be built for Mac, Windows & Linux.
+
+{% include image.html path="posts/outline.png" path-detail="posts/outline.png" alt="Outline" %}
 
 I plan to use [Zenoh](https://zenoh.io/) for my next big project, stay tuned!
