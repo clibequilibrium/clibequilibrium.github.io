@@ -1,25 +1,27 @@
 ---
 layout: post
-title: "Private cloud with Proxmox, Terraform, Ansible & Kubernetes!"
-description: "See how I plan to have private cloud with Proxmox, Terraform, Ansible and Kubernetes!"
+title: "Proxmox, Terraform, Ansible & Kubernetes"
+description: "See how I plan to have private cloud via Proxmox, Terraform, Ansible and Kubernetes clustur on my Homelab machine!"
 thumb_image: "posts/grafana.png"
 tags: [homelab, proxmox, terraform, ansible, kubernetes]
 ---
 
-### Equilibrium Engine is out!
+## Equilibrium Engine is out!
 
 After a year of development I am happy to publish my open source Game Engine on GitHub under permissive license.
 
 It focuses mainly on modularity and the ability to reload your scripts & shaders on the fly. It can also be used to familiarize programmers with C language and Data Oriented Design applying ECS (Entity Component System) pattern. Get it here on [GitHub](https://github.com/clibequilibrium/EquilibriumEngine)
 
 
-### What's next? 
+## What's next? 
 
 Currently I am making a private cloud at home with Proxmox, Terraform, Ansible and Kubernetes! It is currently deployed on a single physical machine with 32 cores, 128GB of RAM and 4TB of RAID 10 storage. 
 
 I use Proxmox as a Hypervisor and provision it via Terraform IAC (Infrastructure as Code) and Ansible that allows me to deploy Kubernetes in HA (high availability mode) on all the Virtual Machines.
 
 ### Terraform & Ansible
+
+{% include image.html path="posts/grafana.png" path-detail="posts/grafana.png" alt="Grafana" %}
 
 With Terraform & Ansible I am able to automate my provisioning and deployment. By provisioning I mean everything from A to Z , from setting up VM resources, OS installation with cloud init, and Kubernetes installation with joining to an existing Kubernetes cluster.
 
@@ -31,7 +33,7 @@ Gearing towards micro service architecture I realized that having a VM per servi
 
 I chose **k3s** implementation of Kubernetes as it is lightweight and distributed as single binary.
 
-#### What is my setup?
+### What is my setup?
 
 {% include image.html path="posts/proxmox.png" path-detail="posts/proxmox.png" alt="Proxmox" %}
 
@@ -48,8 +50,12 @@ This gives me 1.3TB of usable storage for my services. Also I use Rancher UI for
 
 {% include image.html path="posts/rancher.png" path-detail="posts/rancher.png" alt="Rancher UI" %}
 
-#### What do I deploy on my Cluster?
+### What do I deploy on my Cluster?
 
-Currently I have deployed [Minio](https://min.io/) (S3 compatible storage) for my project. I also host wiki [Outline](https://github.com/outline/outline) as an alternative to Notion where I document all my work and sketch up system designs. Next steps would be to use Argocd to setup build system so my project can be built for Mac, Windows & Linux.
+Currently I have deployed [Minio](https://min.io/) (S3 compatible storage) for my project, I deployed it with Operator and 1 Tennant that has 4 drives. 
+
+{% include image.html path="posts/minio.png" path-detail="posts/minio.png" alt="Minio" %}
+
+I also host wiki [Outline](https://github.com/outline/outline) as an alternative to Notion where I document all my work and sketch up system designs. Next steps would be to use ArgoCD to setup build system so my project can be built for Mac, Windows & Linux.
 
 I plan to use [Zenoh](https://zenoh.io/) for my next big project, stay tuned!
