@@ -1,4 +1,0 @@
----
-slug: homelab
-name: Homelab
----

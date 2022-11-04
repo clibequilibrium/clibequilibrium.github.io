@@ -1,20 +1,42 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Alex's Blog</title>
+    <description></description>
+    <link>https://clibequilibrium.github.io/</link>
+    <atom:link href="https://clibequilibrium.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Proxmox, Terraform, Ansible &amp; Kubernetes</title>
+        <description>See how I plan to have private cloud via Proxmox, Terraform, Ansible and Kubernetes cluster on my Homelab machine!</description>
+        <pubDate>Thu, 03 Nov 2022 00:00:00 -0400</pubDate>
+        <link>https://clibequilibrium.github.io//posts/private-cloud</link>
+        <guid isPermaLink="true">https://clibequilibrium.github.io//posts/private-cloud</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Homelab &amp; Equilibrium Engine</title>
+        <description>Check out my Equilibrium Engine development progress. New homelab, PBR rendering and Forward/Deferred/Clustered shading!</description>
+        <pubDate>Sun, 17 Apr 2022 00:00:00 -0400</pubDate>
+        <link>https://clibequilibrium.github.io//posts/engine-progress</link>
+        <guid isPermaLink="true">https://clibequilibrium.github.io//posts/engine-progress</guid>
+      </item>
+    
+      <item>
+        <title>Happy Holidays!</title>
+        <description>See what is coming up in 2022 for Equilibrium Engine and what was done this December.</description>
+        <pubDate>Fri, 24 Dec 2021 00:00:00 -0500</pubDate>
+        <link>https://clibequilibrium.github.io//posts/happy-holidays</link>
+        <guid isPermaLink="true">https://clibequilibrium.github.io//posts/happy-holidays</guid>
+      </item>
+    
+      <item>
+        <title>Equilibrium Engine</title>
+        <description>Welcome to my Game Engine series. Here I will share my journey of creating a multi-threaded engine using ECS from scratch using C/C++ and applying Data Oriented Design.</description>
+        <pubDate>Sun, 14 Nov 2021 00:00:00 -0500</pubDate>
+        <link>https://clibequilibrium.github.io//posts/game-engine-series</link>
+        <guid isPermaLink="true">https://clibequilibrium.github.io//posts/game-engine-series</guid>
+      </item>
+    
   </channel>
 </rss>

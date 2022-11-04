@@ -1,4 +1,0 @@
----
-slug: sdl
-name: SDL
----

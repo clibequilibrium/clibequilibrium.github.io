@@ -1,4 +1,0 @@
----
-slug: imgui
-name: IMGUI
----

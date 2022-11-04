@@ -1,4 +1,0 @@
----
-slug: cxx
-name: CXX
----

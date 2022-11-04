@@ -1,4 +1,0 @@
----
-slug: bgfx
-name: BGFX
----

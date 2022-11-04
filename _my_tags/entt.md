@@ -1,4 +1,0 @@
----
-slug: entt
-name: ENTT
----
