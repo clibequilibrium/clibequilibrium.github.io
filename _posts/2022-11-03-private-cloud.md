@@ -17,7 +17,7 @@ It focuses mainly on modularity and the ability to reload your scripts & shaders
 
 Currently I am making a private cloud at home with Proxmox, Terraform, Ansible and Kubernetes! It is currently deployed on a single physical machine with 64 threads, 128GB of RAM and 4TB of RAID 10 storage. 
 
-{% include image.html path="posts/grafana.png" path-detail="posts/grafana.png" alt="Grafana" %}
+{% include image.html path="posts/grafana.png" path-detail="posts/grafana.png" alt="Grafana dashboard" %}
 
 I use Proxmox as a Hypervisor and provision it via Terraform IAC (Infrastructure as Code) and Ansible that allows me to deploy Kubernetes in HA (high availability mode) on all the Virtual Machines.
 
@@ -35,7 +35,7 @@ I chose **k3s** implementation of Kubernetes as it is lightweight and distribute
 
 ### What is my setup?
 
-{% include image.html path="posts/proxmox.png" path-detail="posts/proxmox.png" alt="Proxmox" %}
+{% include image.html path="posts/proxmox.png" path-detail="posts/proxmox.png" alt="Proxmox dashboard" %}
 
 All 16 VMs are running on Ubuntu Focal Server 20.04, I have also tried Debian 11 but decided to stick with Ubuntu for better compatibility with Rancher.
 
@@ -54,7 +54,7 @@ This gives me 1.3TB of usable storage for my services. Also I use Rancher UI for
 
 Currently I have deployed [Minio](https://min.io/) (S3 compatible storage) for my project, I deployed it with Operator and 1 Tennant that has 4 drives. 
 
-{% include image.html path="posts/minio.png" path-detail="posts/minio.png" alt="Minio" %}
+{% include image.html path="posts/minio.png" path-detail="posts/minio.png" alt="Minio Console" %}
 
 I also host wiki [Outline](https://github.com/outline/outline) as an alternative to Notion where I document all my work and sketch up system designs. Next steps would be to use ArgoCD to setup build system so my project can be built for Mac, Windows & Linux.
 
