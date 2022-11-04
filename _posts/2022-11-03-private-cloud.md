@@ -23,9 +23,9 @@ I use Proxmox as a Hypervisor and provision it via Terraform IAC (Infrastructure
 
 ### Terraform & Ansible
 
-With Terraform & Ansible I am able to automate my provisioning and deployment. By provisioning I mean everything from A to Z , from setting up VM resources, OS installation with *cloudinit*, and Kubernetes installation with joining to an existing Kubernetes cluster.
+With Terraform & Ansible I am able to automate my provisioning and deployment. By provisioning I mean everything from A to Z , from creating and setting up VM resources, OS installation via *cloudinit*, and Kubernetes installation combined with joining to an existing Kubernetes cluster.
 
-Terraform allows me to locally provision my VMs but also provision Amazon or Google VMs if I decide to go to a public cloud. Ansible playbook is another useful automation tool that allows me to simply connect to my VMs via SSH and deploy Kubernetes on them. I strongly recommend check out [Techno Tim](https://github.com/techno-tim/k3s-ansible) repository and [this article](https://medium.com/@ssnetanel/build-a-kubernetes-cluster-using-k3s-on-proxmox-via-ansible-and-terraform-c97c7974d4a5)
+Terraform allows me to locally provision my VMs but also provision Amazon or Google VMs. So if I ever decide to go to a public cloud I will be all set with couple extra lines of code. Ansible playbook is another useful automation tool that allows me to simply connect to my VMs via SSH and deploy Kubernetes on them. I strongly recommend check out [Techno Tim](https://github.com/techno-tim/k3s-ansible) repository and [this article](https://medium.com/@ssnetanel/build-a-kubernetes-cluster-using-k3s-on-proxmox-via-ansible-and-terraform-c97c7974d4a5)
 
 ### Why Kubernetes?
 
@@ -46,7 +46,7 @@ The setup of k3s cluster is the following:
 * 3 master nodes in HA mode (if 1 master fails the system continues to work) 
 * 13 worker nodes
 
-This gives me 1.3TB of usable storage for my services. Also I use Rancher UI for Cluster management and app deployment with Helm Charts. I use *metallb* as bare metal load balancer, *kube vip* for service balance and *traefik* as ingress controller. Proxmox storage is a ZFS RAID10 so all my VM data is even if 1 or even 2 disks fails (if they are not from the same pair).
+This gives me 1.3TB of usable storage for my services. Also I use Rancher UI for Cluster management and app deployment with Helm Charts. I use *metallb* as bare metal load balancer, *kube vip* for service balance and *traefik* as ingress controller. Proxmox storage is a zfs RAID 10 so all my VM data is safe even if 1 or 2 disks fail (unless they are from the same pair).
 
 {% include image.html path="posts/rancher.png" path-detail="posts/rancher.png" alt="Rancher UI" %}
 
